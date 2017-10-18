@@ -5,7 +5,7 @@ public class VectorHelper {
 	
 	 public int [] VectorH;
 	
- 	
+ 	//triBulle est une fonction qui va trie les elemt de tableau
 
 	 public  void triBulle(int tableau[]) {
 			int longueur = tableau.length;
@@ -28,3 +28,14 @@ public class VectorHelper {
 			} while (permut);
 			VectorH=tableau;
 		}
+	 
+	 public int[] sommer(int [] tab1,int[] tab2){
+		 if(tab1.length != tab2.length)
+		       throw new IllegalArgumentException("la taille de deux tableaux est différentes"); 
+		 int[] tab3=new int[tab1.length];
+		 for(int i=0;i<tab3.length;i++)
+	          tab3[i]=tab1[i]+tab2[i];
+	          VectorH=tab3;
+		 return VectorH;
+	 }
+	
