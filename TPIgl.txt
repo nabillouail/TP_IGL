@@ -39,3 +39,14 @@ public class VectorHelper {
 		 return VectorH;
 	 }
 	
+	 public void inverseTableau(int tableau[])
+	 {
+	         int i,tempo = 0,taille=tableau.length;
+	         for (i = 0 ; i <taille/2; i++)
+	         {
+	                 tempo=tableau[i];
+	                 tableau[i] = tableau[taille-i-1];
+	                 tableau[taille-i-1]=tempo;
+	         }
+	         VectorH=tableau;
+	 }
